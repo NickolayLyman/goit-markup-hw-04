@@ -168,6 +168,9 @@ ul {
 .advantage-list {
     display: flex;
 }
+.advantage-list-item {
+    width: calc((100%-30px*3)/4);
+}
 .advantage-list-item:not(:last-child){
     margin-right: 30px;
 }
@@ -201,6 +204,9 @@ ul {
 .work-direction-list{
     display: flex;
 }
+.work-direction-list-item {
+    width: calc((100%-30px*2)/3);
+}
 .work-direction-list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -230,6 +236,10 @@ ul {
     text-align: center;
     color: var(--title-color);
 }
+.team-list-item {
+    width: calc((100%-30px*3)/4);
+}
+
 .team-list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -296,6 +306,7 @@ ul {
     margin-right: 69px;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 231px;
 }
 .logo-footer {
     display: block;
@@ -340,6 +351,7 @@ ul {
 .social-links-block {
     padding-top: 72px;
     padding-bottom: 60px;
+    width: 206px;
 }
 .social-links-block-text {
     display: block;
@@ -378,6 +390,9 @@ ul {
 .work-examples-list {
     display: flex;
     flex-wrap: wrap;
+}
+.work-examples-item {
+    width: 370px;
 }
 .work-examples-item:not(:nth-child(3n)){
     margin-right: 30px; 

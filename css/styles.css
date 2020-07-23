@@ -86,8 +86,24 @@ ul {
     display: flex;
     margin-left: auto;
 }
+.header-contacts-item {
+    display: flex;
+    align-items: center;
+}
 .header-contacts-item:not(:last-child) {
     margin-right: 30px;
+}
+.mail-icon-svg {
+    margin-right: 10px;
+    width: 16px;
+    height: 11.2px;
+    fill: var(--main-color);
+}
+.phone-icon-svg {
+    margin-right: 10px;
+    width: 10px;
+    height: 14.94px;
+    fill: var(--main-color); 
 }
 .header-mail-link,
 .header-tel-link {
@@ -104,6 +120,13 @@ ul {
 .header-mail-link:focus,
 .header-tel-link:hover,
 .header-tel-link:focus {
+    color: var(--accent-color);
+}
+.header-mail-link:hover .mail-icon-svg,
+.header-mail-link:focus .mail-icon-svg,
+.header-tel-link:hover .phone-icon-svg,
+.header-tel-link:focus .phone-icon-svg {
+    fill: var(--accent-color);
     color: var(--accent-color);
 }
 .logo {
@@ -124,8 +147,17 @@ ul {
 /*Секция герой*/
 .hero {
     margin-bottom: 94px;
+    padding-top: 200px;
     text-align: center;
-}
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)),
+        url(../images/header-bg.jpg);
+    background-repeat: no-repeat; 
+    background-color: rgb(47, 48, 58);   
+    }
 .hero-title {
     margin-bottom: 30px;
     font-weight: 900;
@@ -134,8 +166,6 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
- /*Задано свойство background-color для визуализации*/   
-    background-color: #d3d3d3;
     color: var(--secondary-color) ;
 
 }
@@ -364,6 +394,11 @@ ul {
 }
 .footer-socail-list-item:not(:last-child){
     margin-right: 10px;
+}
+.instagram-icon {
+    width: 20px;
+    height: 20px;
+    fill:tomato;
 }
 /* Список кнопок фильтра */
 .btn-list {

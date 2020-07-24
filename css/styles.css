@@ -25,6 +25,16 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .list {
     list-style: none;
 }
@@ -167,7 +177,6 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-color) ;
-
 }
 .hero-btn {
     padding-top: 10px;
@@ -175,6 +184,7 @@ ul {
     padding-bottom: 10px;
     padding-left: 32px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .modal-btn {
     border: transparent;
@@ -185,6 +195,7 @@ ul {
     letter-spacing: 0.06em;
     color: var(--title-color);
     background-color: #F5F4FA;
+    cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -203,6 +214,22 @@ ul {
 }
 .advantage-list-item:not(:last-child){
     margin-right: 30px;
+}
+.advantage-list-icon {
+    width: 70px;
+    height: 70px;
+}
+.advantage-icon-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;   
 }
 .advantage-list-title {
     margin-bottom: 10px;
@@ -313,7 +340,10 @@ ul {
     text-align: center;
     color: var(--title-color);
 }
-.clietnts-list-item {
+.clietnts-list-item:not(:last-child) {
+    margin-right: 30px;
+} 
+.clients-list-link {
     width: 170px;
     height: 90px;
     border: 1px solid #AFB1B8;
@@ -321,10 +351,20 @@ ul {
     display: flex;
     justify-content: center; 
     align-items: center; 
+    color: #AFB1B8;
 }
-.clietnts-list-item:not(:last-child) {
-    margin-right: 30px;
-} 
+.clients-icon {
+   fill: #AFB1B8;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+    color:var(--accent-color);
+    border:  1px solid var(--accent-color);
+}
+.clients-list-link:hover .clients-icon,
+.clients-list-link:focus .clients-icon {
+    fill: var(--accent-color);
+}
 /*Футер контакты*/
 .footer {
     background-color:#2F303A;
@@ -406,6 +446,7 @@ ul {
     justify-content: center;
     padding-top: 93px;
     padding-bottom: 50px;
+    cursor: pointer;
 }
 .btn-list-item:not(:last-child) {
     margin-right: 8px;
@@ -438,8 +479,13 @@ ul {
 .work-examples-item-link-image {
     margin-bottom: 20px;
 }
-.work-examples-subtitle {
+.work-examples-block {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 10px;
     padding-left: 24px;
+}
+.work-examples-subtitle {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -448,7 +494,6 @@ ul {
     color:var(--title-color)
 }
 .work-examples-text {
-    padding-left: 24px;
     font-size: 16px;
     line-height: 1.87;
     color: var(--main-color);

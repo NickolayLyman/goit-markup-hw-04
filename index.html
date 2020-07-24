@@ -55,25 +55,41 @@
 <!--Преимущества-->
 <section class="advantage">
     <div class="container">
-    <h2 hidden>Наши преимущества</h2>
+    <h2 class="visually-hidden">Наши преимущества</h2>
     <ul class="advantage-list">
         <li class="advantage-list-item list">
-            <img class="advantage-list-image" src="./images/antenna.svg" alt="Иконка антенны">
+            <div class="advantage-icon-block">
+            <svg class="advantage-list-icon">
+                <use href="./images/sprite.svg#icon-antenna"></use>
+            </svg>
+        </div>
             <h3 class="advantage-list-title">Внимание к деталям</h3>
             <p class="advantage-list-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
         <li class="advantage-list-item list">
-            <img class="advantage-list-image" src="./images/clock.svg" alt="Иконка часов">
+            <div class="advantage-icon-block">
+            <svg class="advantage-list-icon">
+                <use href="./images/sprite.svg#icon-clock"></use>
+            </svg>
+            </div>
             <h3 class="advantage-list-title">Пунктуальность</h3>
             <p class="advantage-list-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
         <li class="advantage-list-item list">
-            <img class="advantage-list-image" src="./images/diagram.svg" alt="Иконка с диаграммой">
+            <div class="advantage-icon-block">
+            <svg class="advantage-list-icon">
+                <use href="./images/sprite.svg#icon-diagram"></use>
+            </svg>
+            </div>
             <h3 class="advantage-list-title">Планирование</h3>
             <p class="advantage-list-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
         <li class="advantage-list-item list">
-            <img class="advantage-list-image" src="./images/astronaut.svg" alt="Иконка астронавта">
+            <div class="advantage-icon-block">
+            <svg class="advantage-list-icon">
+                <use href="./images/sprite.svg#icon-astronaut"></use>
+            </svg>
+            </div>
             <h3 class="advantage-list-title">Современные технологии</h3>
             <p class="advantage-list-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
@@ -111,16 +127,36 @@
             <p class="team-list-item-position" lang="en">Product Designer</p>
             <ul class="social-list">
                 <li class="social-list-item list">
-                    <a class="social-list-link" href="" target="_blank"><img src="./images/social-links-icon/instagram-icon.svg" alt="Иконка Инстаграмма"></a>
+                    <a class="social-list-link" href="" target="_blank" aria-label="Инстаграмм">
+                      <svg>
+                          <use href="./images/sprite.svg#icon-instagram">
+                      </use>
+                      </svg>  
+                    </a>
                 </li>
                 <li class="social-list-item list">
-                    <a href="" target="_blank"><img src="./images/social-links-icon/twitter-icon.svg" alt="Иконка Твитера"></a>
+                    <a class="social-list-link" href="" target="_blank" aria-label="Твиттер" >
+                        <svg>
+                            <use href="./images/sprite.svg#icon-twitter">
+                        </use>
+                        </svg>    
+                    </a>
                 </li>
                 <li class="social-list-item list">
-                    <a href="" target="_blank"><img src="./images/social-links-icon/facebook-icon.svg" alt="Иконка Фейсбука"></a>
+                    <a class="social-list-link" href="" target="_blank" aria-label="Фейсбук">
+                        <svg>
+                            <use href="./images/sprite.svg#icon-facebook">
+                        </use>
+                        </svg>  
+                    </a>
                 </li>
                 <li class="social-list-item list">
-                    <a href="" target="_blank"><img src="./images/social-links-icon/linkedin-icon.svg" alt="Иконка Линкедина"></a>
+                    <a class="social-list-link" href="" target="_blank" aria-label="Линкедин">
+                        <svg>
+                            <use href="./images/sprite.svg#icon-linkedin">
+                        </use>
+                        </svg>  
+                    </a>
                 </li>
             </ul>
         </li>
@@ -190,33 +226,51 @@
     <h2 class="clients-title">Постоянные клиенты</h2>
     <ul class="clients-list">
         <li class="clietnts-list-item list">
-            <a href="" target="_blank">
-                <img src="./images/clients/company-logo-1.svg" alt="Логотип компании Я и Ко">
+            <a class="clients-list-link" href="" target="_blank" aria-label="Логотип компании Я и Ко">
+                <svg class="clients-icon" width="44.27px" height="49.23px">
+                    <use href="./images/sprite.svg#icon-company-logo-1">
+                    </use>
+                </svg>
             </a>
         </li>
         <li class="clietnts-list-item list">
-            <a href="" target="_blank">
-                <img src="./images/clients/company-logo-2.svg" alt="Логотип компании Теглайн">
+            <a class="clients-list-link" href="" target="_blank" aria-label="Логотип компании Теглайн">
+                <svg class="clients-icon" width="40px" height="52px">
+                    <use href="./images/sprite.svg#icon-company-logo-2">
+                    </use>
+                </svg>
             </a>
         </li>
         <li class="clietnts-list-item list">
-            <a href="" target="_blank">
-                <img class="clients-logo-item" src="./images/clients/company-logo-3.svg" alt="Логотип компании Кампани">
+            <a class="clients-list-link" href="" target="_blank" aria-label="Логотип компании Кампани">
+                <svg class="clients-icon" width="41px" height="42.6px">
+                    <use href="./images/sprite.svg#icon-company-logo-3">
+                    </use>
+                </svg>
             </a>
         </li>
         <li class="clietnts-list-item list">
-            <a href="" target="_blank">
-                <img src="./images/clients/company-logo-4.svg" alt="Логотип компании Фостер Петерс">
+            <a class="clients-list-link" href="" target="_blank" aria-label="Логотип компании Фостер Петерс">
+                <svg class="clients-icon" width="79.66px" height="42.02px">
+                    <use href="./images/sprite.svg#icon-company-logo-4">
+                    </use>
+                </svg>
             </a>
         </li>
         <li class="clietnts-list-item list">
-            <a href="" target="_blank">
-                <img src="./images/clients/company-logo-5.svg" alt="Логотип компании Брэнд">
+            <a class="clients-list-link" href="" target="_blank" aria-label="Логотип компании Брэнд">
+                <svg class="clients-icon" width="59px" height="47px">
+                    <use href="./images/sprite.svg#icon-company-logo-5">
+                    </use>
+                </svg>
             </a>
         </li>
         <li class="clietnts-list-item list">
-            <a href="" target="_blank">
-                <img src="./images/clients/company-logo-6.svg" alt="Логотип компании Тэг Лайн">
+            <a class="clients-list-link" href="" target="_blank" aria-label="Логотип компании Тэг Лайн">
+                <svg class="clients-icon" width="88.48px" height="45.44px">
+                    <use href="./images/sprite.svg#icon-company-logo-6">
+                    </use>
+                </svg>
             </a>
         </li>
     </ul>

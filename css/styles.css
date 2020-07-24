@@ -322,7 +322,34 @@ ul {
     justify-content: center;
 }
 .social-list-item:not(:last-child) {
-    margin-right: 34px;
+    margin-right: 10px;
+}
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.social-list-link {
+    display: block; 
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+} 
+.social-list-link:hover,
+.social-list-link:focus {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%; 
+    color: var(--accent-color);
+    background-color: var(--accent-color);  
+    text-align: center;
+    padding: 12px;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--secondary-color);
+    color: var(--accent-color);
 }
 /*Клиенты*/
 .clients {
@@ -435,10 +462,33 @@ ul {
 .footer-socail-list-item:not(:last-child){
     margin-right: 10px;
 }
-.instagram-icon {
+.footer-social-icon {
     width: 20px;
     height: 20px;
-    fill:tomato;
+    fill: var(--secondary-color);
+}
+.footer-social-list-link {
+    display: block; 
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+} 
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%; 
+    color: var(--accent-color);
+    background-color: var(--accent-color);  
+    text-align: center;
+    padding: 12px;
+}
+.footer-social-list-link:hover .footer-social-icon,
+.footer-social-list-link:focus .footer-social-icon {
+    fill: var(--secondary-color);
+    color: var(--accent-color);
 }
 /* Список кнопок фильтра */
 .btn-list {

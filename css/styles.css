@@ -183,14 +183,6 @@ ul {
     text-transform: uppercase;
     color: var(--secondary-color) ;
 }
-.hero-btn {
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    border-radius: 4px;
-    cursor: pointer;
-}
 .modal-btn {
     border: transparent;
     font-weight: 700;
@@ -202,20 +194,31 @@ ul {
     background-color: #F5F4FA;
     cursor: pointer;
 }
+.hero-btn {
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+}
 .modal-btn:hover,
 .modal-btn:focus {
     color: var(--secondary-color);
     background-color: var(--accent-color);
 }
 /*Преимущества*/
-.advantage {
-    margin-bottom: 94px;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;  
 }
 .advantage-list {
     display: flex;
 }
 .advantage-list-item {
-    width: calc((100%-30px*3)/4);
+    width: calc((100% - 30px*3)/4);
 }
 .advantage-list-item:not(:last-child){
     margin-right: 30px;
@@ -252,9 +255,6 @@ ul {
     line-height: 1.71;
 }
 /*Напраления работы*/
-.work-direction {
-    margin-bottom: 94px;
-}
 .work-direction-title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -267,7 +267,7 @@ ul {
     display: flex;
 }
 .work-direction-list-item {
-    width: calc((100%-30px*2)/3);
+    width: calc((100% - 30px*2)/3);
 }
 .work-direction-list-item:not(:last-child) {
     margin-right: 30px;
@@ -283,8 +283,6 @@ ul {
 }
 /*Команда*/
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: #F5F4FA;
 }
 .team-list {
@@ -299,7 +297,7 @@ ul {
     color: var(--title-color);
 }
 .team-list-item {
-    width: calc((100%-30px*3)/4);
+    width: calc((100% - 30px*3)/4);
 }
 
 .team-list-item:not(:last-child) {
@@ -357,10 +355,7 @@ ul {
     color: var(--accent-color);
 }
 /*Клиенты*/
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .clients-list {
     display: flex;
 }
@@ -405,10 +400,10 @@ ul {
     display: flex;
 }
 .contacts {
-    margin-right: 69px;
+    margin-right: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 231px;
+    width: 270px;
 }
 .logo-footer {
     display: block;
@@ -453,7 +448,7 @@ ul {
 .social-links-block {
     padding-top: 72px;
     padding-bottom: 60px;
-    width: 206px;
+    width: 270px;
 }
 .social-links-block-text {
     display: block;
@@ -543,9 +538,6 @@ ul {
     rgba(0, 0, 0, 0.16), 0px 4px 4px 
     rgba(0, 0, 0, 0.06), 0px 1px 1px
     rgba(0, 0, 0, 0.12);
-}
-.work-examples-item-link-image {
-    margin-bottom: 20px;
 }
 .work-examples-block {
     padding-top: 20px;
